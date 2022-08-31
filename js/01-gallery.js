@@ -35,7 +35,7 @@ gallery.addEventListener('click', (event) => {
   box.show();
 
   const specialFunc = function (event) {
-    console.log(event);
+//    console.log(event);
     if (event.key === 'Escape') {
       box.close();
 
@@ -47,16 +47,3 @@ gallery.addEventListener('click', (event) => {
 
   document.querySelector('body').addEventListener('keydown', specialFunc);
 });
-
-// for (let i = 1; i <= gallery.children.length; i += 1) {
-//   const galleryLink = document.querySelector(
-//     `.gallery__item:nth-of-type(${i}) .gallery__link`
-//   );
-
-//   const source = galleryLink.getAttribute('href');
-
-//   galleryLink.addEventListener('click', (event) => {
-//     event.preventDefault();
-//     box.show();
-//   });
-// }
